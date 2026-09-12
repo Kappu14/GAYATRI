@@ -1,0 +1,34 @@
+[
+  {
+    "id": "cc426f39c89f47fb88e9faf3ebb233e6",
+    "title": "EJBKW",
+    "content": "JHG,",
+    "category": "",
+    "tags": [],
+    "priority": "medium",
+    "dueDate": "",
+    "color": "#3521e8",
+    "favorite": false,
+    "pinned": false,
+    "archived": false,
+    "deleted": false,
+    "createdAt": "2026-09-11T18:15:00.936620+00:00",
+    "updatedAt": "2026-09-11T18:16:08.895309+00:00"
+  },
+  {
+    "id": "20260911181015579776",
+    "title": "DEFINITION : FIRST GENERATION OF COMPUTER",
+    "content": "First generation of computer relied on vacuum tube consist of both circuit and memory storage, also used for primarily and massive used",
+    "category": "",
+    "tags": [],
+    "priority": "medium",
+    "dueDate": "",
+    "color": "#6d5ef6",
+    "favorite": true,
+    "pinned": false,
+    "archived": false,
+    "deleted": false,
+    "createdAt": "2026-09-11T18:10:15.579866Z",
+    "updatedAt": "2026-09-11T18:17:58.406508+00:00"
+  }
+]

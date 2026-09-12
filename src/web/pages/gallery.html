@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | KEINSTEIN</title>
+  <style>
+    :root { --bg:#0e173c; --card:rgba(255,255,255,0.08); --line:rgba(255,255,255,0.14); --text:#edf2ff; --muted:#d8defd; --peach:#ffc98d; --pink:#f4a4c8; --violet:#a99cff; --mint:#96f7c9; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial,sans-serif; background:radial-gradient(circle at top,#23376e,#0f173d 48%,#090d1b 100%); color:var(--text); }
+    .container { max-width:1200px; margin:0 auto; padding:24px 20px 50px; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:20px; }
+    .brand { font-weight:900; letter-spacing:.15em; text-transform:uppercase; font-size:12px; }
+    .brand-mark { display:inline-grid; place-items:center; width:28px; height:28px; border-radius:8px; background:linear-gradient(135deg,var(--peach),var(--pink)); color:#2c173e; margin-right:8px; }
+    .nav { display:flex; gap:10px; flex-wrap:wrap; }
+    .nav a { border:1px solid var(--line); background:rgba(255,255,255,0.05); color:var(--text); padding:9px 12px; border-radius:12px; font-weight:700; text-decoration:none; }
+    .hero { padding:28px; border:1px solid var(--line); border-radius:25px; background:linear-gradient(135deg, rgba(255,201,141,0.12), rgba(255,255,255,0.04), rgba(164,161,255,0.12)); margin-bottom:24px; }
+    .hero h1 { margin:0; font-size:clamp(2.4rem,5vw,4.4rem); }
+    .hero p { color:var(--muted); line-height:1.7; max-width:820px; }
+    .grid { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:16px; }
+    .card { background:rgba(255,255,255,0.05); border:1px solid var(--line); border-radius:18px; padding:18px; }
+    .photo { min-height:180px; display:grid; place-items:center; border-radius:15px; font-size:40px; background:linear-gradient(135deg, rgba(255,201,141,0.18), rgba(164,161,255,0.2)); border:1px solid var(--line); }
+    .card h3 { margin:14px 0 10px; font-size:20px; }
+    .card p { margin:0; color:var(--muted); line-height:1.6; }
+    @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+    @media (max-width:580px){ .grid{grid-template-columns:1fr;} header{flex-direction:column; align-items:flex-start;} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand"><span class="brand-mark">✦</span>KEINSTEIN</div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/story">Story</a>
+        <a href="/timeline">Timeline</a>
+        <a href="/dreams">Dreams</a>
+        <a href="/memories">Memories</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Our gallery of beautiful moments</h1>
+      <p>Every picture tells a story, and every story makes us feel more connected. This gallery holds the little glows, the quiet laughter, the warm hugs, and the small things that made our bond feel whole.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card"><div class="photo">🌙</div><h3>Moonlight walk</h3><p>That peaceful moment when the world felt still and our smiles said everything.</p></div>
+      <div class="card"><div class="photo">💬</div><h3>Long talks</h3><p>Even ordinary conversations became magical when we were both listening.</p></div>
+      <div class="card"><div class="photo">🍓</div><h3>Sweet surprises</h3><p>Little gestures, tiny gifts, and happy little details that made our hearts warm.</p></div>
+      <div class="card"><div class="photo">☕</div><h3>Tea and comfort</h3><p>Quiet moments turned into memories when we were simply together.</p></div>
+      <div class="card"><div class="photo">💌</div><h3>Love notes</h3><p>Words that were soft, comforting, and full of tenderness.</p></div>
+      <div class="card"><div class="photo">🎧</div><h3>Shared music</h3><p>Sounds that turned into a playlist of our favorite times together.</p></div>
+      <div class="card"><div class="photo">🌤️</div><h3>Morning glow</h3><p>A new day felt brighter because it started with the thought of each other.</p></div>
+      <div class="card"><div class="photo">🌼</div><h3>Blooming love</h3><p>We grew from moments into a bond that keeps becoming more beautiful.</p></div>
+      <div class="card"><div class="photo">🚶</div><h3>Slow walks</h3><p>Walking side by side became one of our favorite kinds of happiness.</p></div>
+      <div class="card"><div class="photo">🎀</div><h3>Little joys</h3><p>Ribboned memories, bright moods, and happy hearts in every season.</p></div>
+      <div class="card"><div class="photo">🌊</div><h3>Sea breeze</h3><p>Even the wind felt like it was carrying our calm together.</p></div>
+      <div class="card"><div class="photo">🫶</div><h3>One bond</h3><p>Every memory became a quiet reminder that love is built in the details.</p></div>
+    </section>
+  </div>
+</body>
+</html>
