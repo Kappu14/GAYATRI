@@ -1,10 +1,4 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
 
-
-HOST = "127.0.0.1"
-PORT = 8001
-
-PAGE = """<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -139,30 +133,3 @@ PAGE = """<!doctype html>
 	</script>
 </body>
 </html>"""
-
-
-class WebsiteHandler(BaseHTTPRequestHandler):
-		def do_GET(self):
-				if self.path not in ("/", "/index.html"):
-						self.send_error(404)
-						return
-				content = PAGE.encode("utf-8")
-				self.send_response(200)
-				self.send_header("Content-Type", "text/html; charset=utf-8")
-				self.send_header("Content-Length", str(len(content)))
-				self.end_headers()
-				self.wfile.write(content)
-
-		def log_message(self, format, *args):
-				return
-
-
-if __name__ == "__main__":
-		server = HTTPServer((HOST, PORT), WebsiteHandler)
-		print(f"Website running at http://{HOST}:{PORT}")
-		try:
-				server.serve_forever()
-		except KeyboardInterrupt:
-				print("\nWebsite stopped.")
-		finally:
-				server.server_close()
